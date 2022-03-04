@@ -1,0 +1,138 @@
+//====================================================================================================
+
+.footer {
+    // .footer__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: $mainColorBlack;
+    }
+
+    // .footer__top
+    &__top {
+        display: flex;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+        gap: 30px;
+
+        margin: 80px 0 60px;
+    }
+
+    // .footer__bottom
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        padding: 20px 0;
+        border-top: 1px solid $mainColorBlack;
+    }
+}
+.top-footer {
+    // .top-footer__item
+    &__item {
+        flex: 1 1 22%;
+    }
+}
+.item-top {
+    // .item-top__title
+    &__title {
+        width: 100%;
+        border-bottom: 1px solid $mainColorBlack;
+        margin-bottom: 30px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    // .item-top__list
+    &__list {
+        :nth-child(1) {
+            margin-top: 0;
+        }
+    }
+
+    // .item-top__text
+    &__text {
+    }
+
+    // .item-top__img
+    &__img {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media (max-width: $mobile) {
+            gap: 40px;
+        }
+
+        a::before {
+            font-size: 20px;
+            @media (max-width: $mobile) {
+                font-size: 40px;
+            }
+        }
+    }
+}
+.list-item {
+    // .list-item__li
+    &__li {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        &::before {
+            font-size: 12px;
+        }
+    }
+}
+* {
+    // ._icon-phone
+    ._icon-phone::before {
+        transform: scale(1.35);
+    }
+
+    // ._icon-mail
+    ._icon-mail::before {
+    }
+
+    // ._icon-youtube
+    ._icon-youtube {
+    }
+
+    // ._icon-vk
+    ._icon-vk {
+    }
+
+    // ._icon-fb
+    ._icon-fb {
+    }
+
+    // ._icon-tg
+    ._icon-tg {
+    }
+
+    // ._icon-e
+    ._icon-e {
+    }
+}
+.bottom-footer {
+    // .bottom-footer__item
+    &__item {
+    }
+}
+
+//====================================================================================================
