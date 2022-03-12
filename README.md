@@ -1,4 +1,3 @@
-# ojjo_website
-## Website
+# Website
 
 url: https://ojjo-website.vercel.app/
